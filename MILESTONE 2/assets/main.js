@@ -5,7 +5,7 @@ const app = new Vue({
     },
     mounted() {
             axios
-            .get('http://localhost:8888/php/php-ajax-dischi/API/database.php')
+            .get('./API/database.php')
             .then(response => {
               console.log(response);
               this.albums = response.data

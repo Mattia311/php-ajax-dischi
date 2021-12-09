@@ -1,5 +1,7 @@
 
+<?php
 
+?>
 
 
 <!DOCTYPE html>
@@ -10,11 +12,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        .card-container {
-            background: green;
-        }
-    </style>
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC' crossorigin='anonymous'>
+    
     
 </head>
 <body>
@@ -25,9 +24,9 @@
         </div>
         </header>
         <main>
-        <div class="container">
-            <div class="card" v-for="(album, index) in albums" :key="index" class="album">
-                <div class="card-container">
+        <div class="d-flex flex-wrap justify-content-center">
+            <div class="" v-for="(album, index) in albums" :key="index" class="album">
+                <div class="card text-center">
                     <img :src="album.poster">
                     <h3>{{album.title}}</h3>
                     <p>{{album.author}}</p>
