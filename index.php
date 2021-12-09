@@ -1,6 +1,7 @@
 <?php
 
-require __DIR__ . "/database.php";
+require __DIR__ . "/index-vue.php";
+require __DIR__ . "/API/database.php";
 
 ?>
 
